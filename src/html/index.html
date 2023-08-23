@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <p id="login-message"></p>
+
+  <h1>Signup</h1>
+  <form id="signup-form">
+    <label for="signup-username">Username:</label>
+    <input type="text" id="signup-username" name="username" required><br>
+    <label for="signup-password">Password:</label>
+    <input type="password" id="signup-password" name="password" required><br>
+    <label for="signup-password-confirm">Confirm Password:</label>
+    <input type="password" id="signup-password-confirm" name="password-confirm" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p id="signup-message"></p>
+  
+</body>
+<script src="../js/renderer.js"></script>
+</html>
