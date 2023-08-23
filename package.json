@@ -1,0 +1,31 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "main": "src/js/main.js",
+  "author": "electron",
+  "license": "ISC",
+  "description": "electron app",
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^6.1.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "electron": "^24.3.1",
+    "electron-builder": "^23.6.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "win": "electron-builder --win --x64",
+    "mac": "electron-builder --mac",
+    "deploy" : "electron-builder build --win --publish always"
+  },
+  "build": {
+    "productName": "electron-app",
+    "appId": "electron-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heewonim131/electron-app.git"
+  }
+}
